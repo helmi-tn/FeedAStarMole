@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    cursor: url(cursor.png),default;
+    background-color: #6dc884;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin:0;
+    height: 100%; /****************/
+    width: 100%;
+}
+.bg-flexbox{
+    display:flex;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 800px;
+    flex-wrap: wrap; /*run out of space go to next line*/
+    justify-content: center;
+    align-items: center;
+}
+.hole{
+    background-color: black;
+    border-radius: 50%;
+    overflow: visible; /*if its bigger than the mole then show the mole limits*/
+    width: 200px;
+    height: 200px;
+}
+.hole-flexchild{
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.mole{
+    position:relative;
+    right:23px;
+    height:200px;
+}
+.molehungry{
+    cursor:url(cursor-worm.png),default;
+}
+
+.molegone,.hide{
+    display:none;
+}
+.worm-container{
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+.worm{
+    width:1500px;
+}
+.worm-box{
+    width: 1500px;
+}
+.win{
+    height:640px;
+}
+button {
+    background-color: red;
+    border-radius: 12px;
+    height: 3rem;
+    position: absolute;
+    top: 43rem;
+    left: 39rem;
+    width: 20rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
